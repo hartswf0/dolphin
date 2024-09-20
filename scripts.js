@@ -213,3 +213,99 @@ function renderNotFoundPage() {
     </section>
   `;
 }
+
+// ... existing code ...
+
+switch (page) {
+    case 'home':
+      renderHomePage();
+      break;
+    case 'projects':
+      if (id) {
+        renderProjectDetail(id);
+      } else {
+        renderProjectsPage();
+      }
+      break;
+    case 'about':
+      renderAboutPage();
+      break;
+    case 'contact':
+      renderContactPage();
+      break;
+    case 'tools-and-research':
+      if (id) {
+        renderToolDetail(id);
+      } else {
+        renderToolsAndResearchPage();
+      }
+      break;
+    default:
+      renderNotFoundPage();
+  }
+  
+  function renderToolsAndResearchPage() {
+    const content = document.getElementById('content');
+    let toolsHTML = '';
+    data.toolsAndResearch.forEach(tool => {
+      toolsHTML += `
+        <div class="tool-card" data-id="${tool.id}">
+          <h3>${tool.title}</h3>
+          <p>${tool.description}</p>
+        </div>
+      `;
+    });
+  
+    content.innerHTML = `
+      <section class="tools-overview">
+        <div class="container">
+          <h1>Tools & Research</h1>
+          <div class="tools-grid">
+            ${toolsHTML}
+          </div>
+        </div>
+      </section>
+    `;
+  
+    // Add event listeners to tool cards
+    const toolCards = document.querySelectorAll('.tool-card');
+    toolCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const toolId = card.getAttribute('data-id');
+        window.location.href = `index.html?page=tools-and-research&id=${toolId}`;
+      });
+    });
+  }
+
+  function renderToolDetail(toolId) {
+    const tool = data.toolsAndResearch.find(t => t.id === toolId);
+    if (!tool) {
+      renderNotFoundPage();
+      return;
+    }
+  
+    const content = document.getElementById('content');
+    let theoryHTML = '';
+    if (tool.theory) {
+      theoryHTML = `
+        <h2>Theory: ${tool.theory.name}</h2>
+        <p>${tool.theory.description}</p>
+      `;
+    }
+  
+    content.innerHTML = `
+      <section class="tool-detail">
+        <div class="container">
+          <h1>${tool.title}</h1>
+          <p>${tool.description}</p>
+          ${theoryHTML}
+          ${tool.url ? `<a href="${tool.url}" class="cta-button">Try It Here</a>` : ''}
+          <!-- Back to Tools & Research Link -->
+          <a href="index.html?page=tools-and-research" class="back-link">&larr; Back to Tools & Research</a>
+        </div>
+      </section>
+    `;
+  }
+
+  
+  

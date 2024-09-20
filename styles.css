@@ -394,4 +394,67 @@ body {
       margin-bottom: 10px;
     }
   }
+  /* Tools & Research Overview */
+.tools-overview {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .tools-overview h1 {
+    margin-bottom: 40px;
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .tool-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .tool-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .tool-card h3 {
+    margin-top: 0;
+  }
+  
+  /* Tool Detail Page */
+  .tool-detail {
+    padding: 60px 0;
+  }
+  
+  .tool-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .tool-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .tool-detail .cta-button {
+    margin-top: 20px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #3F51B5;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
   
