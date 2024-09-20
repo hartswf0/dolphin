@@ -307,5 +307,78 @@ switch (page) {
     `;
   }
 
+  function renderManifestoPage() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+      <section class="manifesto">
+        <div class="container">
+          <h1>Our Manifesto</h1>
+          <p>At BLUE BELT, we believe in the journey toward mastery...</p>
+          <!-- Add more content as needed -->
+        </div>
+      </section>
+    `;
+  }
+
+  switch (page) {
+    // ... existing cases ...
+    case 'privacy-policy':
+      renderPrivacyPolicyPage();
+      break;
+    case 'terms-of-service':
+      renderTermsOfServicePage();
+      break;
+    // ... other cases ...
+  }
+
+  function renderPrivacyPolicyPage() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+      <section class="legal">
+        <div class="container">
+          <h1>Privacy Policy</h1>
+          <p>Effective Date: [Insert Date]</p>
+          <!-- Add detailed privacy policy content here -->
+        </div>
+      </section>
+    `;
+  }
   
-  
+  function renderTermsOfServicePage() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+      <section class="legal">
+        <div class="container">
+          <h1>Terms of Service</h1>
+          <p>Effective Date: [Insert Date]</p>
+          <!-- Add detailed terms of service content here -->
+        </div>
+      </section>
+    `;
+  }
+
+  // Example in renderProjectDetail()
+content.innerHTML = `
+<!-- ... -->
+<section class="project-hero" style="background-image: url('${project.heroImage}');">
+  <div class="container">
+    <h1>${project.title}</h1>
+    <img src="${project.heroImage}" alt="${project.title} Hero Image" style="display: none;">
+  </div>
+</section>
+<!-- ... -->
+`;
+
+// When rendering team member profiles
+let teamHTML = '';
+data.team.forEach(member => {
+teamHTML += `
+  <div class="team-member">
+    <img src="${member.image}" alt="${member.name}">
+    <h3>${member.name}</h3>
+    <p>${member.role}</p>
+    <p>${member.bio}</p>
+  </div>
+`;
+});
+

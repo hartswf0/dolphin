@@ -274,7 +274,7 @@ body {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 5%;
     margin-bottom: 15px;
   }
   
@@ -457,4 +457,50 @@ body {
     text-decoration: underline;
   }
   
+  /* Manifesto Section */
+.manifesto {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .manifesto h1 {
+    margin-bottom: 40px;
+  }
+  
+  .manifesto p {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Add more styles as needed */
+  
+  /* Legal Pages */
+.legal {
+    padding: 80px 0;
+  }
+  
+  .legal h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .legal p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .legal a {
+    color: #3F51B5;
+  }
+  
+  .legal a:hover {
+    text-decoration: underline;
+  }
   

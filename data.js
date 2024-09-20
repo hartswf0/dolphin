@@ -11,9 +11,9 @@ const data = {
         creators: ["Yago Arconada Alvarez"],
         genre: ["Fantasy", "Nature Documentary"],
         description: "This mesmerizing film takes us on a journey into the heart of a moonlit forest, where we witness the extraordinary transformation of a humble mushroom...",
-        thumbnail: "assets/images/projects/whispers-of-the-enchanted-thumbnail.jpg",
-        heroImage: "assets/images/projects/whispers-of-the-enchanted-hero.jpg",
-        video: "assets/videos/whispers-of-the-enchanted.mp4",
+        thumbnail: "assets/images/projects/mush.png",
+        heroImage: "assets/images/projects/mush.png",
+        video: "assets/videos/48.mp4",
         features: [
           "Nature documentary",
           "Fantasy elements",
@@ -44,9 +44,9 @@ const data = {
         creators: ["Namit Kapoor"],
         genre: ["Psychological Thriller", "Drama"],
         description: "This haunting film explores the depths of a woman's fractured psyche as she grapples with the consequences of a life-altering event...",
-        thumbnail: "assets/images/projects/together-in-fear-thumbnail.jpg",
-        heroImage: "assets/images/projects/together-in-fear-hero.jpg",
-        video: "assets/videos/together-in-fear-broken-in-freedom.mp4",
+        thumbnail: "assets/images/projects/mirror.png",
+        heroImage: "assets/images/projects/mirror.png",
+        video: "assets/videos/blue-deli.mp4",
         features: [
           "Psychological thriller",
           "Dark tone",
@@ -77,9 +77,9 @@ const data = {
         creators: ["Hannsue", "Ali Huang"],
         genre: ["Short Film", "Drama", "Abstract", "Philosophical"],
         description: "\"Memories in Ash and Tide\" is a captivating short film that explores the fleeting nature of memory and the enduring power of human experience...",
-        thumbnail: "assets/images/projects/memories-in-ash-and-tide-thumbnail.jpg",
-        heroImage: "assets/images/projects/memories-in-ash-and-tide-hero.jpg",
-        video: "assets/videos/memories-in-ash-and-tide.mp4",
+        thumbnail: "assets/images/projects/phoenix.jpg",
+        heroImage: "assets/images/projects/phoenix.jpg",
+        video: "assets/videos/hawk.mp4",
         features: [
           "Abstract visuals",
           "Poetic narration",
@@ -108,9 +108,9 @@ const data = {
         creators: ["Yemesrach Tadesse", "Watson Hartsoe"],
         genre: ["Animated Short", "Sports", "Comedy", "Family"],
         description: "Bashir's Brilliant Plan is a heartwarming animated short film that follows Bashir, a young boy from Mohabikburgh who dreams of becoming a soccer champion...",
-        thumbnail: "assets/images/projects/bashirs-brilliant-plan-thumbnail.jpg",
-        heroImage: "assets/images/projects/bashirs-brilliant-plan-hero.jpg",
-        video: "assets/videos/bashirs-brilliant-plan.mp4",
+        thumbnail: "assets/images/projects/bashir.png",
+        heroImage: "assets/images/projects/bashir.png",
+        video: "assets/videos/hawk.mp4",
         features: [
           "Hand-drawn animation",
           "Charming characters",
@@ -235,70 +235,70 @@ const data = {
         id: "yemesrach-tadesse",
         name: "Yemesrach Tadesse",
         role: "Research",
-        image: "assets/images/team/yemesrach-tadesse.jpg",
+        image: "assets/images/team/tortoise.png",
         bio: "Yemesrach leads our research initiatives, exploring new frontiers in AI and storytelling."
       },
       {
         id: "tony",
         name: "Tony",
         role: "Film",
-        image: "assets/images/team/tony.jpg",
+        image: "assets/images/team/tortoise.png",
         bio: "Tony is a filmmaker passionate about visual storytelling and cinematic experiences."
       },
       {
         id: "ali",
         name: "Ali",
         role: "Music",
-        image: "assets/images/team/ali.jpg",
+        image: "assets/images/team/dolphin.png",
         bio: "Ali composes original music scores that bring our projects to life."
       },
       {
         id: "remington",
         name: "Remington",
         role: "Film",
-        image: "assets/images/team/remington.jpg",
+        image: "assets/images/team/tortoise.png",
         bio: "Remington specializes in film production and editing, ensuring our stories are told beautifully."
       },
       {
         id: "namit",
         name: "Namit",
         role: "3D",
-        image: "assets/images/team/namit.jpg",
+        image: "assets/images/team/dolphin.png",
         bio: "Namit creates stunning 3D visuals and environments for our projects."
       },
       {
         id: "brittany",
         name: "Brittany",
         role: "Music Tech",
-        image: "assets/images/team/brittany.jpg",
+        image: "assets/images/team/owl.png",
         bio: "Brittany merges music and technology to enhance our auditory experiences."
       },
       {
         id: "cecile",
         name: "Cecile",
         role: "Film",
-        image: "assets/images/team/cecile.jpg",
+        image: "assets/images/team/tortoise.png",
         bio: "Cecile brings stories to life through her filmmaking expertise."
       },
       {
         id: "adonay",
         name: "Adonay",
         role: "Film",
-        image: "assets/images/team/adonay.jpg",
+        image: "assets/images/team/elephant.png",
         bio: "Adonay contributes to our film projects with a focus on narrative and direction."
       },
       {
         id: "yago",
         name: "Yago",
         role: "Engineering",
-        image: "assets/images/team/yago.jpg",
+        image: "assets/images/team/hawk.png",
         bio: "Yago develops engineering solutions that power our creative tools."
       },
       {
         id: "watson",
         name: "Watson",
         role: "Cybernetics",
-        image: "assets/images/team/watson.jpg",
+        image: "assets/images/team/dolphin.png",
         bio: "Watson integrates cybernetic concepts into our workflows, enhancing efficiency and innovation."
       }
     ],
